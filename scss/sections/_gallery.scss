@@ -1,0 +1,77 @@
+#gallery{
+     font-family: Raleway;
+     background: rgb(254, 233, 46);
+     h2{
+          display: block;
+          margin: 0px auto 32px auto !important;
+          font-weight: 700;
+          font-size: 90px;
+          color: rgb(38, 38, 38);
+          text-align: center;
+     }
+     p{
+          margin: 0px auto 48px auto !important;
+          max-width: 500px;
+          font-weight: 300;
+          font-size: 17px;
+          color: rgb(38, 38, 38);
+          text-align: center;
+     }
+     .container{
+          &::after{
+               clear: both;
+          }
+          .row{
+               position: relative;
+               div:nth-child(1){
+                    position: relative;
+               }
+
+               div:nth-child(2){
+                    position: relative;
+                    
+               }
+
+               div:nth-child(3){
+                    position: absolute;
+                    left: 67%;
+                    top: 50%;
+                    
+               }
+                @media only screen and (max-width: 767px){
+                    div:nth-child(3){
+                         position: relative;
+                         left: auto;
+                         top: auto;
+                         border-radius: 30%;
+                    }  
+               }
+               .two-gal{
+                }     
+                
+               div{
+                    float: left;
+
+                    img{
+                         margin-bottom: 32px !important;
+                         max-width: 100%;
+                     //    vertical-align: middle;
+                    }
+                    div{
+                         margin: 0px 0px !important;          
+                    }
+               }
+          }
+     }
+     button{
+          display: block;
+          margin: 0 auto !important;  
+          font-weight: 300;
+          font-size: 20px;
+          color: rgb(255, 255, 255);
+          background: rgb(85, 133, 162);
+          padding: 16px 24px;
+          box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2); 
+          
+     }
+}  

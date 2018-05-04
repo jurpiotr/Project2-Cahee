@@ -1,0 +1,44 @@
+*,*::before,*::after {
+     -webkit-box-sizing: border-box !important;
+     -moz-box-sizing: border-box !important;
+     -ms-box-sizing: border-box !important;
+     box-sizing: border-box !important;
+
+}
+body{
+     margin: 0;
+     padding: 0;   
+     background: rgb(248, 249, 250); 
+     section{
+          margin: 0 !important;
+          .container{
+               margin: 0 auto !important;
+          }
+     }
+}
+
+
+#navigation{
+     height: 150px;
+     font-family: Pacifico;
+     .navbar{
+          float: right;
+     }
+     .navbar-nav{
+          font-family: Raleway;
+          font-weight: 900;
+          font-size: 16px;
+          color: rgb(255, 0, 0);
+     }
+     .nav-item{
+          padding: 0 30px;
+          &:hover{
+               display:block;
+               border-top: 3px solid rgb(255,96, 51);
+          }
+     }
+}
+
+#footer{
+// OK
+}

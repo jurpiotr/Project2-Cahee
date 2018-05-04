@@ -1,0 +1,172 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa; }
+  body section {
+    margin: 0 !important; }
+    body section .container {
+      margin: 0 auto !important; }
+
+#navigation {
+  height: 150px;
+  font-family: Pacifico; }
+  #navigation .navbar {
+    float: right; }
+  #navigation .navbar-nav {
+    font-family: Raleway;
+    font-weight: 900;
+    font-size: 16px;
+    color: red; }
+  #navigation .nav-item {
+    padding: 0 30px; }
+    #navigation .nav-item:hover {
+      display: block;
+      border-top: 3px solid #ff6033; }
+
+#about-us {
+  font-family: Raleway;
+  background: #00b0b0; }
+  #about-us h2 {
+    font-weight: 700;
+    font-size: 90px;
+    color: white;
+    padding-bottom: 32px; }
+  #about-us p {
+    font-weight: 300;
+    font-size: 17px;
+    color: white;
+    padding-bottom: 24px; }
+
+#gallery {
+  font-family: Raleway;
+  background: #fee92e; }
+  #gallery h2 {
+    display: block;
+    margin: 0px auto 32px auto !important;
+    font-weight: 700;
+    font-size: 90px;
+    color: #262626;
+    text-align: center; }
+  #gallery p {
+    margin: 0px auto 48px auto !important;
+    max-width: 500px;
+    font-weight: 300;
+    font-size: 17px;
+    color: #262626;
+    text-align: center; }
+  #gallery .container::after {
+    clear: both; }
+  #gallery .container .row {
+    position: relative; }
+    #gallery .container .row div:nth-child(1) {
+      position: relative; }
+    #gallery .container .row div:nth-child(2) {
+      position: relative; }
+    #gallery .container .row div:nth-child(3) {
+      position: absolute;
+      left: 67%;
+      top: 50%; }
+    @media only screen and (max-width: 767px) {
+      #gallery .container .row div:nth-child(3) {
+        position: relative;
+        left: auto;
+        top: auto;
+        border-radius: 30%; } }
+    #gallery .container .row div {
+      float: left; }
+      #gallery .container .row div img {
+        margin-bottom: 32px !important;
+        max-width: 100%; }
+      #gallery .container .row div div {
+        margin: 0px 0px !important; }
+  #gallery button {
+    display: block;
+    margin: 0 auto !important;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+    background: #5585a2;
+    padding: 16px 24px;
+    box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2); }
+
+#header {
+  font-family: Raleway;
+  position: relative;
+  padding: 15% 0 25%;
+  background-image: url("../img/header-bg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right; }
+  #header div {
+    position: relative; }
+  #header h2 {
+    font-size: 60px;
+    font-weight: 900;
+    color: #262626;
+    margin-bottom: 32px; }
+  #header p {
+    font-size: 17px;
+    font-weight: 300;
+    color: #262626;
+    margin-bottom: 32px; }
+  #header button {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    background: #ff6033;
+    padding: 16px 24px;
+    box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2); }
+
+#our-service {
+  font-family: Raleway;
+  font-weight: 700;
+  background: #70bfff; }
+  #our-service .container {
+    background-image: url("../img/tomato.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right; }
+    #our-service .container h2 {
+      font-size: 90px;
+      color: white;
+      font-weight: inherit; }
+    #our-service .container p {
+      font-size: 20px;
+      color: #262626; }
+    #our-service .container #os-text {
+      display: flex;
+      position: relative;
+      text-align: center;
+      justify-content: center;
+      align-items: center; }
+    #our-service .container #os-boxes .d-flex {
+      height: 100px;
+      margin-bottom: 16px !important;
+      box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2);
+      background: white; }
+      #our-service .container #os-boxes .d-flex div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        border-left: 1px solid #b6b6b6;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 50%;
+        text-align: center; }
+      #our-service .container #os-boxes .d-flex .au-os {
+        background-image: url(../img/cart.png); }
+      #our-service .container #os-boxes .d-flex .au-qp {
+        background-image: url(../img/quality.png); }
+      #our-service .container #os-boxes .d-flex .au-did {
+        background-image: url(../img/world.png); }
+      #our-service .container #os-boxes .d-flex .au-wo {
+        background-image: url(../img/carrot.png); }
+
+/*# sourceMappingURL=style.css.map */
