@@ -1,16 +1,25 @@
 #about-us{
      font-family: Raleway;
      background: rgb(0, 176, 176);
-     h2{
-          font-weight: 700;
-          font-size: 90px;
-          color: rgb(255, 255, 255);
-          padding-bottom: 32px;
-     }
-     p{
-          font-weight: 300;
-          font-size: 17px;
-          color: rgb(255, 255, 255);
-          padding-bottom: 24px;
+     
+
+     position: relative;
+     .container{
+          background-image: url("../img/cup.png");
+          background-size: contain;
+          background-repeat: no-repeat;
+          
+          h2{
+               font-weight: 700;
+               font-size: 90px;
+               color: rgb(255, 255, 255);
+               padding-bottom: 32px;
+          }
+          p{
+               font-weight: 300;
+               font-size: 17px;
+               color: rgb(255, 255, 255);
+               padding-bottom: 24px;
+          }
      }
 }

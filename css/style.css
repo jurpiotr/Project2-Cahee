@@ -31,21 +31,27 @@ body {
 
 #about-us {
   font-family: Raleway;
-  background: #00b0b0; }
-  #about-us h2 {
-    font-weight: 700;
-    font-size: 90px;
-    color: white;
-    padding-bottom: 32px; }
-  #about-us p {
-    font-weight: 300;
-    font-size: 17px;
-    color: white;
-    padding-bottom: 24px; }
+  background: #00b0b0;
+  position: relative; }
+  #about-us .container {
+    background-image: url("../img/cup.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+    #about-us .container h2 {
+      font-weight: 700;
+      font-size: 90px;
+      color: white;
+      padding-bottom: 32px; }
+    #about-us .container p {
+      font-weight: 300;
+      font-size: 17px;
+      color: white;
+      padding-bottom: 24px; }
 
 #gallery {
   font-family: Raleway;
-  background: #fee92e; }
+  background: #fee92e;
+  padding: 20px 0px; }
   #gallery h2 {
     display: block;
     margin: 0px auto 32px auto !important;
@@ -147,7 +153,7 @@ body {
       align-items: center; }
     #our-service .container #os-boxes .d-flex {
       height: 100px;
-      margin-bottom: 16px !important;
+      margin: 16px !important;
       box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2);
       background: white; }
       #our-service .container #os-boxes .d-flex div {
@@ -168,5 +174,43 @@ body {
         background-image: url(../img/world.png); }
       #our-service .container #os-boxes .d-flex .au-wo {
         background-image: url(../img/carrot.png); }
+
+#subscribe {
+  font-family: Raleway;
+  position: relative;
+  background-image: url("../img/sub-bg.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin-right: auto;
+  margin-left: auto; }
+  #subscribe .container {
+    position: relative;
+    padding: 10% 0 10%; }
+  #subscribe h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #262626;
+    margin-bottom: 32px; }
+  #subscribe p {
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 48px; }
+  #subscribe input {
+    margin-bottom: 30px;
+    border: 1px solid #262626;
+    padding: 20px 16px;
+    color: #262626; }
+  #subscribe .btn-sub {
+    display: inline-block;
+    text-align: center; }
+  #subscribe button {
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    background: #96b92c;
+    padding: 16px 24px;
+    box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2); }
 
 /*# sourceMappingURL=style.css.map */
