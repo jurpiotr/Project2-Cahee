@@ -21,9 +21,7 @@ body{
 #navigation{
      height: 150px;
      font-family: Pacifico;
-     .navbar{
-          float: right;
-     }
+     background-color: rgba(255,255,255,0.65);
      .navbar-nav{
           font-family: Raleway;
           font-weight: 900;
@@ -31,7 +29,7 @@ body{
           color: rgb(255, 0, 0);
      }
      .nav-item{
-          padding: 0 30px;
+          padding: 0;
           &:hover{
                display:block;
                border-top: 3px solid rgb(255,96, 51);
@@ -40,5 +38,29 @@ body{
 }
 
 #footer{
-// OK
+     font-family: Raleway;
+     font-weight: 300;
+     font-size: 16px;
+     color: rgb(185, 185, 185);
+     background: rgb(38, 38, 38);
+     .container{
+          .row{
+               height: 90px;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               .col{
+                    text-align: center;
+                    &:nth-child(2){
+                         font-family: Pacifico;
+                         font-size: 24px;
+                    }
+                    .paint-red{
+                         color: rgb(247, 43, 59);
+                         font-weight: 700;
+                    }
+               }
+          }
+     }
+
 }

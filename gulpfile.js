@@ -36,8 +36,8 @@ gulp.task('cssmini', function(){
     	.pipe(gulp.dest('./dist/'))
 });
 
-gulp.task('images', function(){
-  return gulp.src('./images/**/*.+(png|jpg|gif|svg)')
+gulp.task('img', function(){
+  return gulp.src('./img/**/*.+(png|jpg|gif|svg)')
   .pipe(imagemin())
-  .pipe(gulp.dest('dist/images'))
+  .pipe(gulp.dest('dist/img'))
 });
