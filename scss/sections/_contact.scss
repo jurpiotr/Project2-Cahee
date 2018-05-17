@@ -1,28 +1,20 @@
 #contact{
-     font-family: Raleway;
-     position: relative;
      padding: 5% 0 15%;
      background-image: url("../img/contact-bg.jpg");
      background-size: cover;
      background-repeat: no-repeat;
+     h2{
+          @extend .f60, .fw-bold, .mb32, .t-center ;
+          color: $def-text;
+     }
+     p{
+          @extend .f17, .fw-light, .text-center, .mb32 ;
+          color: $def-text;
+          margin: 0px auto 48px auto !important;
+          max-width: 500px;
+     }
      .container{
-               h2{
-                    text-align: center;
-                    font-weight: 700;
-                    font-size: 90px;
-                    color: rgb(38,38,38);
-                    margin-bottom: 32px;
-               }
-               > p{
-                    margin: 0px auto 48px auto !important;
-                    max-width: 500px;
-                    font-weight: 300;
-                    font-size: 17px;
-                    color: rgb(38,38,38);
-                    text-align: center;
-               }
-               .row{
-                    
+          .row{ 
                #address{
                     h3{
                          font-weight: 700;
@@ -30,6 +22,7 @@
                          margin-bottom: 6px;
                     }
                     p{
+                         text-align: left;
                          font-weight: 300;
                          font-size: 20px;
                          margin-bottom: 16px;

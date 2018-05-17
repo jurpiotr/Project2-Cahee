@@ -1,78 +1,66 @@
 #blog{
-     font-family: Raleway;
-     background: rgb(176, 124, 247);
+     background: $bg-blog;
      padding: 20px 0px;
      .container{
           h2{
-               text-align: center;
-               font-size: 90px;
-               font-weight: 700;
-               color: rgb(255, 255, 255);
-               margin-bottom: 32px;
+               @extend .f90, .fw-bold, .mb32, .t-center ;
+               color: white;
+          }
+          h2{
+               @extend .f40, .fw-bold, .mb32 ;
+               color: $def-text;
           }
           p{
+               @extend .f17, .fw-light, .t-center ;
                max-width: 500px;
                margin: 0 auto 32px auto !important;
-               font-size: 17px;
-               font-weight: 300;
-               color: rgb(255, 255, 255);
-               text-align: center;
+               color: white;
           }
           #news{
                margin-right: auto;
                margin-left: auto;
                .sub-news{
+
+                    .container-news{
                     position: relative;
                     background-size: contain;
                     background-repeat: no-repeat;
-                    .container-news{
                          width: 100%;
                          padding: 15% 10%;
                          div{
+                              @extend .fw-bold, .t-center ;
                               padding: 0;
-                              font-weight: 700;
                               color: white;
                               margin: 0 32px;
                               background: rgb(86, 92, 101);
                               width: 13%;
-                              text-align: center;
                          }
                          h3{
+                              @extend .f32, .fw-bold, .mb32 ;
                               color: white;
-                              font-size: 20px;
-                              font-weight: 700;
-                              margin-bottom: 32px;
                               margin-left: 32px 20px;
                          }
                          p{
+                              @extend .f13, .fw-light, .mb20 ;
                               color: white;
-                              font-size: 13px;
-                              font-weight: 300;
-                              margin-bottom: 20px;
+
                               margin-left: 20px;
                          }
                     }
                }
-               #news1{
-                    background-image: url("../img/blog1.png");
-               }
-               #news2{
-                    background-image: url("../img/blog1.png");
-               }
-               #news3{
-                    background-image: url("../img/blog1.png");
-               }
+
           }
           button{
-               display: block;
-               margin: 0 auto !important; 
-               font-size: 20px;
-               font-weight: 300;
-               color: rgb(255, 255, 255);
-               background: rgb(247, 43, 59);
-               padding: 16px 24px;
-               box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2);
-          
+               @include g-button($btn-bg-blog);
           }
      }
+}
+#news1{
+     @include news("blog1.png");
+}
+#news2{
+     @include news("blog2.png");
+}
+#news3{
+     @include news("blog3.png");
 }

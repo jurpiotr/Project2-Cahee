@@ -5867,7 +5867,7 @@ button.bg-dark:focus {
 .text-right {
   text-align: right !important; }
 
-.text-center {
+.text-center, #about-us .container p, #contact p, #gallery p, #header p, #our-service .container p, #subscribe p {
   text-align: center !important; }
 
 @media (min-width: 576px) {
@@ -6047,6 +6047,7 @@ a.text-dark:hover, a.text-dark:focus {
   box-sizing: border-box !important; }
 
 body {
+  font-family: Raleway;
   margin: 0;
   padding: 0;
   background: #f8f9fa; }
@@ -6090,8 +6091,52 @@ body {
         color: #f72b3b;
         font-weight: 700; }
 
+.f13, #blog .container #news .sub-news .container-news p {
+  font-size: 13px; }
+
+.f14 {
+  font-size: 14px; }
+
+.f17, #about-us .container p, #blog .container p, #contact p, #gallery p, #header p, #subscribe p {
+  font-size: 17px; }
+
+.f20, #blog .container button, #header button, #our-service .container p, #subscribe button {
+  font-size: 20px; }
+
+.f32, #blog .container #news .sub-news .container-news h3 {
+  font-size: 32px; }
+
+.f40, #blog .container h2, #subscribe h2 {
+  font-size: 40px; }
+
+.f60, #contact h2, #header h2 {
+  font-size: 60px; }
+
+.f80 {
+  font-size: 80px; }
+
+.f90, #about-us .container h2, #blog .container h2, #gallery h2, #our-service .container h2 {
+  font-size: 90px; }
+
+.fw-light, #about-us .container p, #blog .container p, #blog .container #news .sub-news .container-news p, #blog .container button, #contact p, #gallery p, #header p, #header button, #subscribe p, #subscribe button {
+  font-weight: 300; }
+
+.fw-bold, #about-us .container h2, #blog .container h2, #blog .container #news .sub-news .container-news div, #blog .container #news .sub-news .container-news h3, #contact h2, #gallery h2, #our-service .container h2, #subscribe h2 {
+  font-weight: 700; }
+
+.fw-black, #header h2 {
+  font-weight: 900; }
+
+.t-center, #blog .container h2, #blog .container p, #blog .container #news .sub-news .container-news div, #contact h2, #gallery h2, #header h2 {
+  text-align: center; }
+
+.mb32, #about-us .container h2, #about-us .container p, #blog .container h2, #blog .container #news .sub-news .container-news h3, #contact h2, #contact p, #gallery h2, #gallery p, #header h2, #header p, #subscribe h2, #subscribe p {
+  margin-bottom: 32px; }
+
+.mb20, #blog .container #news .sub-news .container-news p {
+  margin-bottom: 20px; }
+
 #about-us {
-  font-family: Raleway;
   background: #00b0b0;
   position: relative; }
   #about-us .container {
@@ -6099,104 +6144,87 @@ body {
     background-size: contain;
     background-repeat: no-repeat; }
     #about-us .container h2 {
-      font-weight: 700;
-      font-size: 90px;
-      color: white;
-      padding-bottom: 32px; }
+      color: white; }
     #about-us .container p {
-      font-weight: 300;
-      font-size: 17px;
-      color: white;
-      padding-bottom: 24px; }
+      color: white; }
 
 #blog {
-  font-family: Raleway;
   background: #b07cf7;
   padding: 20px 0px; }
   #blog .container h2 {
-    text-align: center;
-    font-size: 90px;
-    font-weight: 700;
-    color: white;
-    margin-bottom: 32px; }
+    color: white; }
+  #blog .container h2 {
+    color: #262626; }
   #blog .container p {
     max-width: 500px;
     margin: 0 auto 32px auto !important;
-    font-size: 17px;
-    font-weight: 300;
-    color: white;
-    text-align: center; }
+    color: white; }
   #blog .container #news {
     margin-right: auto;
     margin-left: auto; }
-    #blog .container #news .sub-news {
+    #blog .container #news .sub-news .container-news {
       position: relative;
       background-size: contain;
-      background-repeat: no-repeat; }
-      #blog .container #news .sub-news .container-news {
-        width: 100%;
-        padding: 15% 10%; }
-        #blog .container #news .sub-news .container-news div {
-          padding: 0;
-          font-weight: 700;
-          color: white;
-          margin: 0 32px;
-          background: #565c65;
-          width: 13%;
-          text-align: center; }
-        #blog .container #news .sub-news .container-news h3 {
-          color: white;
-          font-size: 20px;
-          font-weight: 700;
-          margin-bottom: 32px;
-          margin-left: 32px 20px; }
-        #blog .container #news .sub-news .container-news p {
-          color: white;
-          font-size: 13px;
-          font-weight: 300;
-          margin-bottom: 20px;
-          margin-left: 20px; }
-    #blog .container #news #news1 {
-      background-image: url("../img/blog1.png"); }
-    #blog .container #news #news2 {
-      background-image: url("../img/blog1.png"); }
-    #blog .container #news #news3 {
-      background-image: url("../img/blog1.png"); }
+      background-repeat: no-repeat;
+      width: 100%;
+      padding: 15% 10%; }
+      #blog .container #news .sub-news .container-news div {
+        padding: 0;
+        color: white;
+        margin: 0 32px;
+        background: #565c65;
+        width: 13%; }
+      #blog .container #news .sub-news .container-news h3 {
+        color: white;
+        margin-left: 32px 20px; }
+      #blog .container #news .sub-news .container-news p {
+        color: white;
+        margin-left: 20px; }
   #blog .container button {
-    display: block;
     margin: 0 auto !important;
-    font-size: 20px;
-    font-weight: 300;
     color: white;
     background: #f72b3b;
     padding: 16px 24px;
     box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2); }
 
-#contact {
-  font-family: Raleway;
+#news1 {
+  background-image: url("../img/blog1.png");
   position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 8%; }
+
+#news2 {
+  background-image: url("../img/blog2.png");
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 8%; }
+
+#news3 {
+  background-image: url("../img/blog3.png");
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 8%; }
+
+#contact {
   padding: 5% 0 15%;
   background-image: url("../img/contact-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat; }
-  #contact .container h2 {
-    text-align: center;
-    font-weight: 700;
-    font-size: 90px;
+  #contact h2 {
+    color: #262626; }
+  #contact p {
     color: #262626;
-    margin-bottom: 32px; }
-  #contact .container > p {
     margin: 0px auto 48px auto !important;
-    max-width: 500px;
-    font-weight: 300;
-    font-size: 17px;
-    color: #262626;
-    text-align: center; }
+    max-width: 500px; }
   #contact .container .row #address h3 {
     font-weight: 700;
     font-size: 16px;
     margin-bottom: 6px; }
   #contact .container .row #address p {
+    text-align: left;
     font-weight: 300;
     font-size: 20px;
     margin-bottom: 16px; }
@@ -6214,23 +6242,14 @@ body {
       border-left: 3px #355b82; }
 
 #gallery {
-  font-family: Raleway;
   background: #fee92e;
   padding: 20px 0px; }
   #gallery h2 {
-    display: block;
-    margin: 0px auto 32px auto !important;
-    font-weight: 700;
-    font-size: 90px;
-    color: #262626;
-    text-align: center; }
+    color: #262626; }
   #gallery p {
-    margin: 0px auto 48px auto !important;
-    max-width: 500px;
-    font-weight: 300;
-    font-size: 17px;
     color: #262626;
-    text-align: center; }
+    margin: 0px auto 48px auto !important;
+    max-width: 500px; }
   #gallery .container::after {
     clear: both; }
   #gallery .container .row {
@@ -6267,8 +6286,6 @@ body {
     box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2); }
 
 #header {
-  font-family: Raleway;
-  position: relative;
   padding: 15% 0 25%;
   background-image: url("../img/header-bg.jpg");
   background-size: contain;
@@ -6277,26 +6294,17 @@ body {
   #header div {
     position: relative; }
   #header h2 {
-    font-size: 60px;
-    font-weight: 900;
-    color: #262626;
-    margin-bottom: 32px; }
+    color: #262626; }
   #header p {
-    font-size: 17px;
-    font-weight: 300;
-    color: #262626;
-    margin-bottom: 32px; }
+    color: #262626; }
   #header button {
-    font-size: 20px;
-    font-weight: 300;
+    margin: 0 auto !important;
     color: white;
     background: #ff6033;
     padding: 16px 24px;
     box-shadow: 2px 10px 9px rgba(0, 0, 0, 0.2); }
 
 #our-service {
-  font-family: Raleway;
-  font-weight: 700;
   background: #70bfff; }
   #our-service .container {
     background-image: url("../img/tomato.png");
@@ -6304,11 +6312,8 @@ body {
     background-repeat: no-repeat;
     background-position: right; }
     #our-service .container h2 {
-      font-size: 90px;
-      color: white;
-      font-weight: inherit; }
+      color: white; }
     #our-service .container p {
-      font-size: 20px;
       color: #262626; }
     #our-service .container #os-text {
       display: flex;
@@ -6341,7 +6346,6 @@ body {
         background-image: url(../img/carrot.png); }
 
 #subscribe {
-  font-family: Raleway;
   position: relative;
   background-image: url("../img/sub-bg.jpg");
   background-size: contain;
@@ -6353,30 +6357,25 @@ body {
     position: relative;
     padding: 10% 0 10%; }
   #subscribe h2 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #262626;
-    margin-bottom: 32px; }
+    color: #262626; }
   #subscribe p {
-    font-size: 17px;
-    font-weight: 300;
-    color: #262626;
-    margin-bottom: 32px;
-    text-align: center; }
+    color: #1a0303; }
   #subscribe input {
     margin-bottom: 30px;
     border: 1px solid #262626;
     padding: 20px 16px;
-    color: #262626; }
-    #subscribe input::placeholder {
-      color: #aaaaaa;
-      font-size: 15px; }
-  #subscribe .btn-sub {
-    display: inline-block;
-    text-align: center; }
+    color: #262626;
+    font-size: 16px; }
+    #subscribe input:-moz-placeholder {
+      color: #aaaaaa; }
+    #subscribe input::-webkit-input-placeholder {
+      color: #aaaaaa; }
+    #subscribe input:-moz-placeholder {
+      color: #aaaaaa; }
+    #subscribe input:-ms-input-placeholder {
+      color: #aaaaaa; }
   #subscribe button {
-    font-size: 20px;
-    font-weight: 300;
+    margin: 0 auto !important;
     color: white;
     background: #96b92c;
     padding: 16px 24px;
