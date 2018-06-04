@@ -16,24 +16,25 @@
                margin: 0 auto 32px auto !important;
                color: white;
           }
-          #news{
+          .row{
                margin-right: auto;
                margin-left: auto;
+
                .sub-news{
 
                     .container-news{
                     position: relative;
-                    background-size: contain;
+                    background-size: cover;
                     background-repeat: no-repeat;
-                         width: 100%;
-                         padding: 15% 10%;
+                    width: 100%;
+
                          div{
                               @extend .fw-bold, .t-center ;
                               padding: 0;
                               color: white;
                               margin: 0 32px;
                               background: rgb(86, 92, 101);
-                              width: 13%;
+                              width: 18%;
                          }
                          h3{
                               @extend .f32, .fw-bold, .mb32 ;
@@ -46,7 +47,9 @@
 
                               margin-left: 20px;
                          }
+                         
                     }
+                    
                }
 
           }
